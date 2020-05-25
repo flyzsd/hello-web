@@ -55,7 +55,12 @@
 </div>
 <code>This is some code</code>
 <div style="font-family: 'Tangerine', cursive; font-size: 48px; text-shadow: 4px 4px 4px #aaa;">Making the Web Beautiful!</div>
+<div class="container"></div>
 <script type="module">
+    import {html, render} from 'lit-html';
+    render(html`<button>hello</button>`, document.querySelector('div.container'));
+    import './components/my-element.js';
 </script>
+<my-element></my-element>
 </body>
 </html>
